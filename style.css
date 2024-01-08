@@ -9,7 +9,6 @@ html, body {
 div{
     display: flex;
     flex-direction: column;
-    justify-content: end;
     height: 30rem;
     width: 30rem;
     background-color: rgb(255, 255, 255);
@@ -27,11 +26,9 @@ div{
 }
 
 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    height: 48%;
+
+    width: 12rem;
+    margin: 0 auto;
 }
 
 input{
