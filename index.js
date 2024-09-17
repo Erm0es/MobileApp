@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebas
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 const appSettings = {
-    databaseURL: "*HIDDEN*"
+    databaseURL: "https://realtime-database-d5e1a-default-rtdb.europe-west1.firebasedatabase.app/"
 }
 
 const app = initializeApp(appSettings)
@@ -59,7 +59,7 @@ function appendItemToShoppingListEl(item) {
 
     newEl.textContent = itemValue
 
-    newEl.addEventListener("click", function () {
+    newEl.addEventListener("dblclick", function () {
         let exactLocationOfItemInDB = ref(database, `shoppingList/${itemID}`)
 
         remove(exactLocationOfItemInDB)
